@@ -1,8 +1,8 @@
-//
-//  CellProtocol.swift
-//  HW10.1
-//
-//  Created by Павел Градов on 30.04.2024.
-//
-
 import Foundation
+import UIKit
+
+protocol CellProtocol : AnyObject {
+    static var reuseID : String { get }
+    var imageView : UIImageView { get }
+    func setCellConfig(item: ItemData) -> Void
+}
